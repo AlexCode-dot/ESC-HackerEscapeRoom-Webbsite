@@ -7,11 +7,6 @@ body {
   margin: 0;
 }
 
-/*Mixin for display block
-* display: block
-* margin-left: auto
-* margin-right: auto
-*/
 /*HEADER*/
 .header {
   background-color: #011827;
