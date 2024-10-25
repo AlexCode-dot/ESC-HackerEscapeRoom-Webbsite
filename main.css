@@ -7,7 +7,11 @@ body {
   margin: 0;
 }
 
-/*Mixin for display block*/
+/*Mixin for display block
+* display: block
+* margin-left: auto
+* margin-right: auto
+*/
 /*HEADER*/
 .header {
   background-color: #011827;
@@ -473,7 +477,8 @@ body {
 }
 @media only screen and (min-width: 1060px) {
   .end-section__text {
-    padding-bottom: 35px;
+    padding-bottom: 30px;
+    padding-right: 33px;
   }
 }
 .end-section__btn {

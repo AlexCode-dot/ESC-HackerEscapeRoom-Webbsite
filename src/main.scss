@@ -8,11 +8,14 @@ body {
 }
 
 
-/*Mixin for display block*/
+/*Mixin for display block
+* display: block
+* margin-left: auto
+* margin-right: auto
+*/
 
 
-@mixin block-auto
-{
+@mixin block-auto {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -225,8 +228,7 @@ body {
         font-weight: 400;
         text-align: left;
 
-        @media only screen and (min-width: 1060px)
-        {
+        @media only screen and (min-width: 1060px) {
             margin-right: 100px;
             margin-top: 15px;
         }
@@ -506,7 +508,8 @@ body {
         margin-left: 0px;
 
         @media only screen and (min-width: 1060px) {
-            padding-bottom: 35px;
+            padding-bottom: 30px;
+            padding-right: 33px;
         }
     }
 
