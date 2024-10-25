@@ -110,6 +110,7 @@ body {
     @include block-auto;
     padding: 0.8em 2.5em;
     background-color: #8ACFE5;
+    color: #011827;
     border-radius: 5px;
     font-size: 24px;
     border-style: none;
@@ -394,8 +395,8 @@ body {
     background-color: #011827;
 
     @media only screen and (min-width: 1060px) {
-        grid-row: 7;
-        grid-column: span 12;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     &__text {
@@ -440,6 +441,8 @@ body {
         @include block-auto;
         margin-bottom: 64px;
         max-width: 460px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         @media only screen and (min-width: 1060px) {
             grid-row: 1;
@@ -464,6 +467,8 @@ body {
         @include block-auto;
         margin-bottom: 98px;
         max-width: 460px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         @media only screen and (min-width: 1060px) {
             grid-row: 2;
@@ -574,13 +579,13 @@ body {
     }
 
     &__link {
-        margin-top: 5px;
+        display: inline-block;
+        margin-top: 3px;
         font-size: 18px;
         font-weight: 400;
         text-align: left;
         color: #FFFFFF;
         text-decoration: none;
-
     }
 
     &__site-map {
