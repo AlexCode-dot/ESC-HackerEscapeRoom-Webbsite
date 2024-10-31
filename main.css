@@ -73,6 +73,9 @@ body {
   text-align: center;
   text-decoration: none;
 }
+.menu__item:hover {
+  color: #8ACFE5;
+}
 
 /*MAIN IMAGE*/
 .main-picture__img {
@@ -248,9 +251,6 @@ body {
     display: flex;
   }
 }
-.room-wrapper::-webkit-scrollbar {
-  display: none;
-}
 
 .room {
   max-width: 364px;
@@ -284,7 +284,7 @@ body {
   margin-left: 18px;
 }
 .room__star {
-  margin-left: 2px;
+  margin-right: 3px;
 }
 .room__participants {
   margin-left: 10px;
