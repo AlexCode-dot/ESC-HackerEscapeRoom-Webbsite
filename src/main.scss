@@ -8,13 +8,6 @@ body {
 }
 
 
-/*Mixin for display block
-* display: block
-* margin-left: auto
-* margin-right: auto
-*/
-
-
 @mixin block-auto {
     display: block;
     margin-left: auto;
@@ -29,19 +22,18 @@ body {
     background-color: #011827;
     max-height: 216px;
 
-    &__container {
+    &__logo {
         display: flex;
     }
 
-    &__logo {
+    &__logo-image {
         width: 128px;
         margin-left: 26px;
         margin-top: 26px;
         margin-bottom: 35px;
     }
 
-    &__title {
-
+    &__logo-title {
         padding: 0%;
         margin: 0%;
         margin-bottom: 35px;
@@ -62,23 +54,82 @@ body {
             flex: start;
         }
     }
+
+    &__menu-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+
+        @media only screen and (min-width: 1060px) {
+            display: none;
+        }
+    }
 }
 
 .menu {
-    display: none;
-    margin-left: 220px;
-    margin-right: 220px;
-    padding-bottom: 30px;
+
+    @media only screen and (max-width: 1060px) {
+        display: none;
+        position: fixed;
+        background-color: #011827;
+        max-width: 100%;
+        max-height: 100%;
+        top: 25px;
+        left: 20px;
+        right: 20px;
+        bottom: 25px;
+        box-shadow: 0 0 10px 25px #FFFFFF80;
+        animation-name: fade-in2;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition: opasity 2s;
+    }
 
     @media only screen and (min-width: 1060px) {
         display: block;
+        margin-left: 220px;
+        margin-right: 220px;
+        padding-bottom: 30px;
+    }
+
+    &__close-btn {
+        float: right;
+        background-image: url(images-Uppgift/close-button.png);
+        background-size: cover;
+        padding: 20px;
+        margin-top: 25px;
+        margin-right: 28px;
+        background-color: transparent;
+        border: none;
+        animation-name: fade-in;
+        animation-duration: 1s;
+
+        @media only screen and (min-width: 1060px) {
+            display: none;
+        }
     }
 
     &__items {
-        padding-left: 0px;
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
+        @media only screen and (max-width: 1060px) {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin-top: 230px;
+            animation-name: fade-in;
+            animation-duration: 1s;
+        }
+
+        @media only screen and (min-width: 1060px) {
+            padding-left: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
     }
 
     &__item {
@@ -87,6 +138,13 @@ body {
         font-weight: 700;
         text-align: center;
         text-decoration: none;
+
+        @media only screen and (max-width: 1060px) {
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-size: 36px;
+        }
 
         &:hover {
             color: #8ACFE5;
@@ -614,3 +672,47 @@ body {
         text-decoration: none;
     }
 }
+
+
+/*ANIMATIONS*/
+
+
+@keyframes fade-in2 {
+    0% {
+        background-color: #FFFFFF80;
+        opacity: 0;
+    }
+
+    30% {
+        background-color: #FFFFFF80;
+        opacity: 0,05;
+    }
+
+    40% {
+        background-color: #011827;
+        opacity: 1;
+    }
+    100% {
+        background-color: #011827;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
