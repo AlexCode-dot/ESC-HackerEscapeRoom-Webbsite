@@ -633,6 +633,11 @@ body {
   text-decoration: none;
 }
 
+/*Toggle display none*/
+.display {
+  display: block;
+}
+
 /*ANIMATIONS*/
 @keyframes fade-in2 {
   0% {

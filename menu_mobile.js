@@ -4,7 +4,7 @@ const menu = document.querySelector(".menu");
 menuBtn.addEventListener(
     "click",
     () => {
-        menu.style.display = "block";
+        menu.classList.add("display");
         const menuRemoveBtn = document.createElement("button");
         menuRemoveBtn.setAttribute("class", "menu__close-btn");
         menu.appendChild(menuRemoveBtn);
@@ -13,7 +13,7 @@ menuBtn.addEventListener(
         menuRemoveBtn.addEventListener(
             "click",
             () => {
-                menu.style.display = "none";
+                menu.classList.remove("display");
                 menu.removeChild(menuRemoveBtn);
             }
         )
