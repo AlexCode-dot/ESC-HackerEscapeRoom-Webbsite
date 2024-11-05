@@ -115,9 +115,9 @@ body {
     &__items {
         @media only screen and (max-width: 1059px) {
             list-style: none;
-            position: absolute;   
-            top: 50%;   
-            left: 50%;  
+            position: absolute;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
             padding: 0;
             animation-name: fade-in;
@@ -676,8 +676,7 @@ body {
 /*Toggle display none*/
 
 
-.display
-{
+.display {
     display: block;
 }
 
@@ -693,13 +692,14 @@ body {
 
     30% {
         background-color: #FFFFFF80;
-        opacity: 0,05;
+        opacity: 0, 05;
     }
 
     40% {
         background-color: #011827;
         opacity: 1;
     }
+
     100% {
         background-color: #011827;
         opacity: 1;
@@ -723,4 +723,3 @@ body {
         opacity: 1;
     }
 }
-
