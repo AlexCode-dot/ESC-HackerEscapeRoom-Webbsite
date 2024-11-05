@@ -70,7 +70,7 @@ body {
 
 .menu {
 
-    @media only screen and (max-width: 1060px) {
+    @media only screen and (max-width: 1059px) {
         display: none;
         position: fixed;
         background-color: #011827;
@@ -113,13 +113,13 @@ body {
     }
 
     &__items {
-        @media only screen and (max-width: 1060px) {
+        @media only screen and (max-width: 1059px) {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            position: absolute;   
+            top: 50%;   
+            left: 50%;  
+            transform: translate(-50%, -50%);
             padding: 0;
-            margin-top: 230px;
             animation-name: fade-in;
             animation-duration: 1s;
         }
@@ -139,10 +139,9 @@ body {
         text-align: center;
         text-decoration: none;
 
-        @media only screen and (max-width: 1060px) {
+        @media only screen and (max-width: 1059px) {
             display: block;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-bottom: 50px;
             font-size: 36px;
         }
 
